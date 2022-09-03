@@ -5,32 +5,18 @@ import "./style.css";
 
 function List(props) {
   const data = props.data;
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="center-container">
     <div className="inline">
-      <nav>
-      <div className="top-fix">
+           
+      <div className="top-fix" >
         <h1>{props.title}</h1>
-        <div class="flex">
-          <div>
-            <ProgressBar
-              completed={
-                ((parseInt(count) / parseInt(data.length)) * 100).toFixed(2) + "%"
-              }
-              className="wrapper"
-              barContainerClassName="container"
-              completedClassName="barCompleted"
-              labelClassName="label"
-              />
-          </div>
-          <div>
               Progress: {count}/{data.length}
-          </div>
-        </div>
+       <br/>
+       <br/>
       </div>
-      </nav>
       <div className="bottom-scroll">
         {data.length && (
           <>
@@ -63,6 +49,22 @@ function List(props) {
           </>
         )}
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+    <div className="bottom-fix">
+          <ProgressBar
+              completed={
+                ((parseInt(count) / parseInt(data.length)) * 100).toFixed(2) 
+              }
+              // className="wrapper"
+              // barContainerClassName="container"
+              // completedClassName="barCompleted"
+              // labelClassName="label"
+          />  
     </div>
     </div>
   );

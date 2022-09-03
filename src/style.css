@@ -6,13 +6,13 @@ p {
 thead {
   background-color: #bab8b8;
 }
-.done{
+.done {
   background-color: #5de77b;
 }
-.attempted{
+.attempted {
   background-color: #f6a383;
 }
-table{
+table {
   border: 2px solid rgb(2, 2, 2);
 }
 
@@ -24,13 +24,16 @@ td {
   padding: 5px;
 }
 
-.id,.day{
+.id,
+.day {
   text-align: center;
 }
-.link,.timer{
+.link,
+.timer {
   text-align: center;
   width: 80px;
 }
+
 .wrapper {
   border-radius: 5px;
 }
@@ -41,28 +44,29 @@ td {
 
 .barCompleted {
   background-color: rgb(75, 254, 144);
-  width: 80%;
 }
 
-.center-container{
-  /* width: 80%; */
-  margin: 0 auto;
+.center-container {
+  width: 90%;
   align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.flex > div{
+.flex > div {
   width: 100%;
   height: auto;
   font-size: large;
   font-weight: 600;
   text-align: center;
 }
-.inline{
+.inline {
   display: inline-block;
   width: 100%;
   height: auto;
@@ -80,4 +84,10 @@ td {
 .bottom-scroll{
   margin-top: 50px;
 } */
-
+.bottom-fix {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
